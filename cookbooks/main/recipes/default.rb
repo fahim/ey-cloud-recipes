@@ -1,3 +1,12 @@
+enable_package "eyeD3" do
+  version '0.6.18'
+end
+
+package "eyeD3" do
+  version '0.6.18'
+  action :install
+end
+
 #execute "testing" do
 #  command %Q{
 #    echo "i ran at #{Time.now}" >> /root/cheftime
