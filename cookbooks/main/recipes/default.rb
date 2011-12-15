@@ -1,12 +1,3 @@
-enable_package "eyeD3" do
-  version '0.6.18'
-end
-
-package "eyeD3" do
-  version '0.6.18'
-  action :install
-end
-
 #execute "testing" do
 #  command %Q{
 #    echo "i ran at #{Time.now}" >> /root/cheftime
@@ -17,7 +8,7 @@ end
 # require_recipe "sphinx"
 
 #uncomment to turn on memcached
-# require_recipe "memcached"
+require_recipe "memcached"
 
 #uncomment ot run the riak recipe
 # require_recipe "riak"
@@ -46,7 +37,7 @@ end
 #require_recipe "resque"
 
 #uncomment to run the redis recipe
-#  require_recipe "redis"
+#require_recipe "redis"
 
 #require_recipe "logrotate"
 #
