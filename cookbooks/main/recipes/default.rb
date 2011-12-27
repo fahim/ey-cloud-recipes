@@ -1,6 +1,3 @@
-
-require_recipe "delayed_job"
-
 #execute "testing" do
 #  command %Q{
 #    echo "i ran at #{Time.now}" >> /root/cheftime
@@ -37,10 +34,10 @@ require_recipe "memcached"
 #end
 
 #uncomment to run the resque recipe
-#require_recipe "resque"
+require_recipe "resque"
 
 #uncomment to run the redis recipe
-#require_recipe "redis"
+require_recipe "redis"
 
 #require_recipe "logrotate"
 #
